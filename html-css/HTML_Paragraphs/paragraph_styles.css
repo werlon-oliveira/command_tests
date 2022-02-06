@@ -36,6 +36,7 @@ define a text size. Unit: (direct with "px", p.e. 14px), (relative with "em", p.
 
 body{
     font-size: 14px;
+    background-color: lightgrey;
 }
 
 h1{
