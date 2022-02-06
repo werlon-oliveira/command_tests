@@ -1,0 +1,146 @@
+<!--
+January - 2022
+This project brings techiniuques to customize and add some paragraphs properties.
+References:
+W3Schools
+
+-----------------------------------------------------------------------------------------------
+Definition
+A paragraph always starts on a new line, and is usually a block of text. It is a "block element".
+
+Line breaks and blank spaces in the source code are ignored for the browsers.
+
+<hr>:
+**defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+**is used to separate content (or define a change) in an HTML page.
+**is used outside of a "p" tag. Do not use it inside "p" tag, because it can afect to define other properties.
+
+<br>:
+**defines a line break.
+**if you want a line break (a new line) without starting a new paragraph.
+**used to create a horizontal blank space between sentences/elements.
+
+<pre>:
+**defines preformatted text.
+**is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.
+**is used outside of a "p" tag. Do not use it inside "p" tag, because it can afect to define other properties.
+
+<em>:
+**used to give emphasis in a text/word (italic formatting)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Werlon Oliveira">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraphs</title>
+    <link rel="stylesheet" href="paragraph_styles.css">
+    <!--link para css file-->
+</head>
+
+<body>
+
+    <!---------------------------------------------------------------------------------------------->
+    <div id=firstTest>
+        <h1>PRIMEIRA DIV</h1>
+        <!--Paragraph with no rules of line breaks and blank lines-->
+        <p> Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Iste veritatis magnam consequatur, eligendi, quae quos optio maiores saepe accusantium, architecto vitae
+            dese
+
+            runt. Totam nostrum, numquam, facilis impedit magni quaerat quibusdam reprehenderit quidem repellendus,
+            eveniet
+            voluptates possimus voluptatem corrupti dolorem neque!</p>
+    </div>
+    <!--end div firstTest-->
+    <hr>
+
+    <!---------------------------------------------------------------------------------------------->
+    <div id=secondTest>
+        <h1>SEGUNDA DIV</h1>
+        <p>FIRST PART CONTENT:Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident alias, excepturi magni
+            quibusdam non distinctio sit ipsa maiores sapiente dicta quisquam nihil quaerat beatae atque magnam fugiat
+            odit
+            libero placeat aut saepe officiis, quas odio! Itaque veniam dicta nulla veritatis tempora dolorum similique
+            laboriosam labore deserunt et nihil, neque iste, soluta saepe dolores odit reiciendis voluptatem
+            accusantium.
+            officiis.
+            Impedit temporibus ullam culpa tempora tenetur recusandae rerum provident
+            doloremque, consequatur
+            corrupti et voluptatum sed, at expedita, placeat est! Illo obcaecati deleniti dolore cupiditate voluptas
+            vitae
+            dolorum minus corrupti, odio temporibus error culpa? SECOND PART CONTENT: Consequatur ab maxime porro
+            veritatis aperiam quod
+            voluptate explicabo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quos architecto quae
+            totam eaque nostrum tenetur asperiores minima voluptatum? Consequatur sit corporis provident iure impedit,
+            tenetur porro possimus neque itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Fuga fugit beatae molestias necessitatibus aspernatur architecto iure dolorem perferendis velit illo
+            cupiditate, facilis illum. Enim totam vel aut placeat quod amet, autem dolore deserunt, laborum dignissimos
+            inventore aliquid, labore ut sed exercitationem nemo officiis similique suscipit laboriosam! Repellendus
+            sequi similique expedita deserunt non sunt architecto sint doloremque rerum officiis! Magni, aliquid.
+        </p>
+        <hr>
+        <!--Use of "hr" tag properties outside the paragraphs.Used to create a horizontal line between them.-->
+
+        <!--Paragraph with "br" tag properties inside-->
+        <p>FIRST:Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> SECOND: Ab molestiae possimus natus ea
+            consequatur impedit
+            dolorum nemo deserunt veniam necessitatibus?<br><br>THIRD:Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Odit delectus velit corporis eos ab dolores dolorem doloremque, atque neque ut?</p>
+
+        <br>
+        <!--Use of "br" tag properties outside the paragraphs. Used to create a horizontal blank space between sentences/elements. between them.-->
+
+    </div>
+    <!--end div secondTest-->
+
+    <!---------------------------------------------------------------------------------------------->
+    <div id=thirdTest>
+        <h1>TERCEIRA DIV</h1>
+        <p>O carro do Joao tem:<br>
+        </p>
+        <hr>
+        <pre>
+            Ar-condicionado;<br>
+            Direção hidráulica;<br>
+            Transmissão auotmática;</br>
+            Roda em liga leve;<br>
+            4 portas.
+        </pre>
+
+    </div>
+    <!--end div thirdTest-->
+
+    <!---------------------------------------------------------------------------------------------->
+    <div id=fourthTest>
+        <hr>
+        <h1>QUARTA DIV</h1>
+        <p>Be not afraid of greatness.<br>
+            Some are born great,<br>
+            some achieve greatness,<br>
+            and others have greatness thrust upon them.</p>
+
+        <p><em>-William Shakespeare</em>
+            <!--put emphasis to the author-->
+        </p>
+    </div>
+    <!--end div fourthTest-->
+
+    <!---------------------------------------------------------------------------------------------->
+    <hr>
+    
+    <div id=fifthTest>
+        <h1>QUINTA DIV</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatum cupiditate esse! Laudantium saepe minus blanditiis recusandae, minima voluptatum, quam sit consequatur facilis odit delectus ipsum totam nisi molestiae ratione illum laborum provident quae sunt voluptate aut eveniet nihil nulla. Magni ratione unde optio consequuntur dolorem, amet itaque! Est, voluptates!</p>     
+    </div>
+    <!--end div fourthTest-->
+
+</body>
+
+</html>

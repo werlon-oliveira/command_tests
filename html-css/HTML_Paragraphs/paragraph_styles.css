@@ -1,0 +1,92 @@
+/*
+January - 2022
+This project brings techiniques to customize and add some paragraphs properties.
+References:
+W3Schools
+
+-----------------------------------------------------------------------------------------------
+>> text-align:
+property to align horizontally the content.
+left/start: to the left
+center: to the center
+right/end: to the right
+justify: defines in justify formatting
+
+>> text-indent:
+property to include/add(width in px or em or %) an indent/recuo in the first line of the paragraph.
+
+>> text-transform:
+uppercase: to set uppercase text for all character
+lowercase: to set lowercase text for all character
+capitalize: to set uppercase for the first/start character of each word 
+none: to define nothing
+
+>> width
+property to set a maximum width  for any element.
+
+>> margin:
+property to define thickness of the margin element.
+"margin-left and margin-right" can be used to place a boxElement to the central position.
+
+>> font-size:
+define a text size. Unit: (direct with "px", p.e. 14px), (relative with "em", p.e. 1.5em).
+
+
+*/
+
+body{
+    font-size: 14px;
+}
+
+h1{
+    font-size: 1.5em;/*defined "h1" font-size to be 1.5 times the standard("body" font-size) size (bigger)*/
+}
+
+#firstTest p{
+    text-align: justify; /*aligned horizontally in justify formatting*/
+    color: navy; /*property to define the text color.*/
+    text-indent: 10px; /*set 10px indent/recuo*/
+    text-transform: uppercase; /*set uppercase text*/
+}
+
+#secondTest p{
+    text-align: center; /*aligned horizontally to the center*/
+    color: red; /*property to define the text color.*/
+    text-transform: capitalize; /*set capitalize for the text*/    
+}
+
+#secondTest hr{
+    height:50px;/*set a 20px height to the element*/
+    border-width:10px;/*define thickness border*/
+    background-color:black;/*define color for center art of the "hr"*/
+}
+
+#thirdTest{
+    text-align: right; /*aligned horizontally to the center*/
+    color: navy; /*property to define the text color.*/
+    text-transform: lowercase; /*set capitalize for the text*/        
+}
+
+#thirdTest hr{
+    width:15%;/*set a partial horinzontal line with 15% of the size*/
+    margin-right:0; /*align horitonzal line to the right*/
+    height:10px;/*set a 20px height to the element*/
+    background-color:gray           
+}
+
+#fifthTest{
+    text-align: center;
+    }
+
+#fifthTest p{
+    display: block;
+    height:200px;
+    width:20%;
+    overflow:scroll;/*create textBox with horinzontal and vertical scroll*/
+    background-color: lightgreen;
+    padding: 5px;
+
+    /*combining "margin-left" and "margin-right" it allows place a box-Element, without other elements on the left or on the right, to be placed on the center of the page*/
+    margin-left: auto; /*adjusted left position to the center*/
+    margin-right: auto;  /*adjusted right position to the center*/
+}
