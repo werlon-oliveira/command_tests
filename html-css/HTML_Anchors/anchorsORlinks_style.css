@@ -1,0 +1,46 @@
+/*
+January - 2022
+This project brings techiniuques to customize and add anchors/links.
+References:
+W3Schools
+
+-----------------------------------------------------------------------------------------------
+*/
+
+/**************************************Customize for the elements****************************************/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+/**************************************Customize for the "ids"*******************************************/
+#contact{
+    width: 30%;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sections{
+    text-align: center;
+}
+
+/**************************************Customize for the "mergin" ***************************************/
+#sections dt li{
+    display: inline; /*faz elementos do tipo list de um bloco (p.e. <li>) tornarem elementos inline*/
+    margin: 10px;
+    padding: 5px;    
+}
+
+#contact a{
+    display: block;
+    padding: 10px;    
+}
+
+#picture02Link img {
+    border: 3px solid red;
+}
