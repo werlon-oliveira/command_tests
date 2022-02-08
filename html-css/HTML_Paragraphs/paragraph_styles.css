@@ -91,3 +91,7 @@ h1{
     margin-left: auto; /*adjusted left position to the center*/
     margin-right: auto;  /*adjusted right position to the center*/
 }
+
+b{
+    color: blue;
+}
