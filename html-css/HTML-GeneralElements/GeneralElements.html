@@ -1,0 +1,123 @@
+<!--
+
+>> <abbr> 
+The <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+
+>> <address>
+The <address> tag defines the contact information for the author/owner of a document or an article.
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+
+>> <video>
+If you want to embed a video, use the <video> tag
+
+>> <audio>
+If you want to embed audio, use the <audio> tag.
+
+>> <embed>    
+Embed a document with the <embed> element:
+a document(html),a picture, a data
+
+>> <object>
+Embed a document with the <object> element:
+a document(html),a picture
+
+>> <area>
+The <area> tag defines an area inside an image map (an image map is an image with clickable areas).
+<area> elements are always nested inside a <map> tag.
+Attribute	    Value	        Description
+alt	            text	        Specifies an alternate text for the area. Required if the href attribute is present
+coords	        coordinates	    Specifies the coordinates of the area
+download	    filename	    Specifies that the target will be downloaded when a user clicks on the hyperlink
+href	        URL	Specifies   the hyperlink target for the area
+shape	                        Specifies the shape of the area
+                default         
+                rect            
+                circle	        
+                poly            
+target	                        Specifies the shape of the area
+                _blank
+                _parent
+                _self
+                _top
+type	        media_type	     Specifies the media type of the target URL
+
+default: Specifies the entire region.
+**rect: Defines a rectangular region. (Value = x1,y1,x2,y2) Specifies the coordinates of the top-left and    bottom-right corner of the rectangle (shape="rect").
+**circle: Defines a circular region. (Value = x,y,radius).Specifies the coordinates of the circle center and the radius (shape="circle").
+**poly: Defines a polygonal region. (Value = x1,y1,x2,y2,..,xn,yn) Specifies the coordinates of the edges of the polygon. If the first and last coordinate pairs are not the same, the browser will add the last coordinate pair to close the polygon (shape="poly").
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The abbr element</h1>
+    <p>The <abbr title="Pontíficia Universidade Católica">PUC</abbr> é uma Universidade do Brasil.</p>
+    <p><abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <p title="Free Web tutorials">W3Schools.com</p>
+    
+    <hr>
+    <h1>The address element</h1>
+    <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    
+    <hr>
+    <h1>The video element</h1>
+    <video width="320" height="240" controls>
+        <source src="GD&T.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    
+    <hr>
+    <h1>The audio element</h1>
+    <p>Click on the play button to play a sound:</p>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="TrackN19.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    
+    <hr>
+    <h1>The embed HTML file</h1>
+    <embed type="text/html" src="embedNewHTML.html" width="500" height="200">
+    
+    <hr>
+    <h1>The embed JPEG file</h1>
+    <embed type="image/jpg" src="universo.jpg" width="300" height="200">
+    
+    <hr>
+    <h1>Agenda para primeira aula do Módulo 2022 (Tag "Embed")</h1>
+    <object data="Aula Inaugural.pdf"></object>
+    
+    <hr>
+    <h1>Example of "The map and area elements"</h1>
+    <p>Click on the house rooms to get the their description:</p>
+    <img src="parts-of-the-house.gif" alt="Workplace" usemap="#housemap" width="501" height="459">
+    <map name="housemap">
+        <area shape="rect" coords="42,205,198,319" alt="Bedroom" href="https://en.wikipedia.org/wiki/Bedroom">
+        <area shape="rect" coords="42,330,198,446" alt="Living room" href="https://en.wikipedia.org/wiki/Living_room">
+        <area shape="rect" coords="305,205,461,319" alt="Bathrom" href="https://en.wikipedia.org/wiki/Bathroom">
+        <area shape="rect" coords="305,330,461,446" alt="Kitchen" href="https://en.wikipedia.org/wiki/Kitchen">
+        <area shape="poly" coords="249,11,11,195,483,195" alt="Roof" href="https://en.wikipedia.org/wiki/Roof">
+    </map>
+
+</body>
+
+</html>
