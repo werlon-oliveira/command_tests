@@ -92,6 +92,10 @@ h1{
     margin-right: auto;  /*adjusted right position to the center*/
 }
 
+#textFormatting{
+    font-size: 20px;
+}
+
 b{
     color: blue;
 }

@@ -31,6 +31,33 @@ Line breaks and blank spaces in the source code are ignored for the browsers.
 <b>:
 Make some text bold (without marking it as important)..
 
+<strong>:
+Important text.The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold.
+
+<i>:
+Italic text.The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+Tip: The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+
+<em>:
+Emphasized text.The HTML <em> element defines emphasized text. The content inside is typically displayed in italic.
+Tip: A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+
+<mark>:
+Marked text.
+The HTML <mark> element defines text that should be marked(default: yellow color) or highlighted.
+
+<del>
+Deleted text.The HTML <del> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.
+
+<ins>:
+Inserted text.The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text.
+
+<sub>:
+Subscript text.The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:
+
+<sup>:
+Superscript text.The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:
+
 -->
 
 <!DOCTYPE html>
@@ -67,7 +94,8 @@ Make some text bold (without marking it as important)..
     <!---------------------------------------------------------------------------------------------->
     <div id=secondTest>
         <h1>SEGUNDA DIV</h1>
-        <p><b>FIRST PART CONTENT:</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident alias, excepturi magni
+        <p><b>FIRST PART CONTENT:</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident alias,
+            excepturi magni
             quibusdam non distinctio sit ipsa maiores sapiente dicta quisquam nihil quaerat beatae atque magnam fugiat
             odit
             libero placeat aut saepe officiis, quas odio! Itaque veniam dicta nulla veritatis tempora dolorum similique
@@ -137,10 +165,37 @@ Make some text bold (without marking it as important)..
 
     <!---------------------------------------------------------------------------------------------->
     <hr>
-    
+
     <div id=fifthTest>
         <h1>QUINTA DIV</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatum cupiditate esse! Laudantium saepe minus blanditiis recusandae, minima voluptatum, quam sit consequatur facilis odit delectus ipsum totam nisi molestiae ratione illum laborum provident quae sunt voluptate aut eveniet nihil nulla. Magni ratione unde optio consequuntur dolorem, amet itaque! Est, voluptates!</p>     
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatum cupiditate esse! Laudantium saepe
+            minus blanditiis recusandae, minima voluptatum, quam sit consequatur facilis odit delectus ipsum totam nisi
+            molestiae ratione illum laborum provident quae sunt voluptate aut eveniet nihil nulla. Magni ratione unde
+            optio consequuntur dolorem, amet itaque! Est, voluptates!</p>
+    </div>
+    <!--end div fourthTest-->
+
+    <!---------------------------------------------------------------------------------------------->
+    <hr>
+
+    <div id=textFormatting>
+        <h1>Testing "Text Formatting"</h1>
+        <p><strong>Michael Jordan</strong> was one of the best <em>NBA</em> player of the history.
+            He started in NBA in 1984, playing for <del>Los Angeles Lakers</del> <ins>Chicago Bulls</ins>.
+            Netflix has launched a sports documentary miniseries, named <i>The Last Dance</i>, which portray Jordan
+            career.<br><br>
+
+            POWER(Math):<br>
+            The power (or exponent) of a number says how many times to use the number in a multiplication.<br>
+            <br>
+            Examples:<br><br>
+            <b>8<sup>2</sup></b> = <mark>8 x 8 = 64</mark> . In this example the little "2" says to use 8 two times in a multiplication.
+            <br><br>
+            Another example: <b>2<sup>4</sup></b> = <mark>2 x 2 x 2 x 2 = 16</mark>
+            We can say "2 to the power 4 is 16", or we can also say "the <b>4<sub>th</sub></b> power of 2 is 16"
+
+
+        </p>
     </div>
     <!--end div fourthTest-->
 
